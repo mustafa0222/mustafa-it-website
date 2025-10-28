@@ -192,3 +192,17 @@ document.addEventListener('click', (e) => {
 window.addEventListener('load', function() {
     document.body.classList.add('page-loaded');
 });
+
+// Clients section animations
+sr.reveal('.clients__description', {
+    origin: 'top',
+    distance: '40px',
+    duration: 700
+});
+
+sr.reveal('.client__item', {
+    interval: 100,
+    origin: 'bottom',
+    distance: '30px',
+    duration: 1000
+});
