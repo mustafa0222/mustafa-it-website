@@ -408,7 +408,115 @@ img {
   height: 100%;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
 }
+/*=============== CLIENTS SECTION ===============*/
+.clients {
+    background-color: var(--container-color);
+    padding-block: 4rem 2rem;
+}
 
+.clients__description {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: var(--normal-font-size);
+    color: var(--text-color-light);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.client__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--body-color);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.client__item:hover {
+    transform: translateY(-5px);
+    border-color: var(--first-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.client__logo {
+    font-size: 3rem;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--container-color), var(--body-color));
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.client__item:hover .client__logo {
+    transform: scale(1.1);
+    background: var(--first-color);
+    color: var(--title-color);
+}
+
+.client__name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    text-align: center;
+}
+
+/* Responsive Design for Clients */
+@media screen and (max-width: 768px) {
+    .clients__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .client__logo {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clients__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .client__item {
+        padding: 1rem;
+    }
+    
+    .client__logo {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .client__name {
+        font-size: 0.75rem;
+    }
+}
+
+/* For large screens */
+@media screen and (min-width: 1150px) {
+    .clients__grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 /*=============== SERVICES ===============*/
 .services__grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -668,3 +776,4 @@ img {
     right: 3rem;
   }
 }
+
