@@ -12,14 +12,14 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Portfolio</a>
+            <a href="#" class="nav__logo">Mustafa</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="#home" class="nav__link">Home</a></li>
-                    <li><a href="#work" class="nav__link">Work</a></li>
+                    <li><a href="#work" class="nav__link">Vision</a></li>
                     <li><a href="#about" class="nav__link">About</a></li>
-                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#services" class="nav__link">Experience</a></li>
                     <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
 
@@ -41,22 +41,33 @@
             <div class="home__container container grid">
                 <div class="home__content">
                     <h1 class="home__title">
-                        Hello, I'm <span>John</span><br>
-                        Web Developer
+                        Mustafa<span> Sherwan</span><br>
+                        IT Specialist
                     </h1>
                     <p class="home__description">
-                        I create amazing websites and web applications with modern technologies and best practices.
+                        Welcome to the official website of Mustafa Sherwan, an experienced IT Specialist with expertise in ERP systems, marketing, and social media strategy. With a strong background in implementing smart business technologies and digital solutions, I focus on helping companies enhance efficiency, strengthen their online presence, and achieve measurable growth.
                     </p>
                     <div class="home__buttons">
                         <a href="#work" class="button">View Work</a>
                         <a href="#contact" class="button button--ghost">Contact Me</a>
                     </div>
                 </div>
-                
+                <!-- Background shape --
                 <div class="home__image">
                     <div class="home__blob">
                         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="var(--first-color)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,89.2,-0.5C88.4,15.3,84.2,30.6,76.1,43.2C68,55.8,56,65.6,42.2,72.9C28.4,80.2,12.7,85.1,-2.4,88.5C-17.5,91.9,-35,93.9,-49.2,87.2C-63.4,80.5,-74.4,65.2,-80.6,48.1C-86.8,31,-88.2,12,-85.5,-5.9C-82.8,-23.8,-76.1,-40.5,-64.9,-53.6C-53.7,-66.7,-37.9,-76.2,-21.9,-81.1C-5.8,-86,10.5,-86.2,24.7,-81.6C38.9,-77,51.1,-67.6,44.7,-76.4Z" transform="translate(100 100)" />
+                            <defs>
+                                <pattern id="blobPattern" patternUnits="userSpaceOnUse" width="200" height="200">
+                                    <image href="assets/img/home-perfil.jpeg" x="0" y="0" width="200" height="200" preserveAspectRatio="xMidYMid slice" />
+                                </pattern>
+                                <clipPath id="blobClip">
+                                    <path fill="var(--first-color)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,89.2,-0.5C88.4,15.3,84.2,30.6,76.1,43.2C68,55.8,56,65.6,42.2,72.9C28.4,80.2,12.7,85.1,-2.4,88.5C-17.5,91.9,-35,93.9,-49.2,87.2C-63.4,80.5,-74.4,65.2,-80.6,48.1C-86.8,31,-88.2,12,-85.5,-5.9C-82.8,-23.8,-76.1,-40.5,-64.9,-53.6C-53.7,-66.7,-37.9,-76.2,-21.9,-81.1C-5.8,-86,10.5,-86.2,24.7,-81.6C38.9,-77,51.1,-67.6,44.7,-76.4Z" transform="translate(100 100)" />
+                                </clipPath>
+                            </defs>
+                            <!-- Background shape -->
+                            <path fill="var(--first-color)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,89.2,-0.5C88.4,15.3,84.2,30.6,76.1,43.2C68,55.8,56,65.6,42.2,72.9C28.4,80.2,12.7,85.1,-2.4,88.5C-17.5,91.9,-35,93.9,-49.2,87.2C-63.4,80.5,-74.4,65.2,-80.6,48.1C-86.8,31,-88.2,12,-85.5,-5.9C-82.8,-23.8,-76.1,-40.5,-64.9,-53.6C-53.7,-66.7,-37.9,-76.2,-21.9,-81.1C-5.8,-86,10.5,-86.2,24.7,-81.6C38.9,-77,51.1,-67.6,44.7,-76.4Z" transform="translate(100 100)" opacity="0.1"/>
+                            <!-- Clipped image -->
+                            <rect width="200" height="200" fill="url(#blobPattern)" clip-path="url(#blobClip)"/>
                         </svg>
                     </div>
                 </div>
@@ -66,7 +77,7 @@
         <!-- WORK -->
         <section class="work section" id="work">
             <div class="work__container container">
-                <h2 class="section__title">My Work</h2>
+                <h2 class="section__title">Vision</h2>
                 <div class="work__grid grid">
                     <div class="work__item">
                         <div class="work__icon">
@@ -79,15 +90,15 @@
                         <div class="work__icon">
                             <i class="ri-smartphone-line"></i>
                         </div>
-                        <h3 class="work__title">Mobile Apps</h3>
-                        <p class="work__description">Cross-platform mobile applications for iOS and Android</p>
+                        <h3 class="work__title">ERP Consultant</h3>
+                        <p class="work__description">Delivering smart, efficient systems for better business management.</p>
                     </div>
                     <div class="work__item">
                         <div class="work__icon">
                             <i class="ri-palette-line"></i>
                         </div>
-                        <h3 class="work__title">UI/UX Design</h3>
-                        <p class="work__description">User-centered design solutions that drive engagement</p>
+                        <h3 class="work__title">Marketing Strategy</h3>
+                        <p class="work__description">Crafting effective plans to reach the right audience and maximize ROI.</p>
                     </div>
                 </div>
             </div>
@@ -95,27 +106,19 @@
 
         <!-- ABOUT -->
         <section class="about section" id="about">
-            <div class="about__container container grid">
+            <div class="about__container container">
                 <div class="about__content">
-                    <h2 class="section__title">About Me</h2>
+                    <h2 class="section__title">About Platform</h2>
                     <p class="about__description">
-                        I'm a passionate web developer with 3+ years of experience creating digital solutions. 
-                        I specialize in front-end development and user experience design.
+                       This platform is designed to showcase my work, share valuable insights in technology and marketing, and inspire others to build modern, connected businesses. Explore my journey, the projects I’ve led, and the brands I’ve helped grow — and join me in shaping the future of digital transformation and innovation.
                     </p>
                     <div class="about__skills">
+                        <span class="about__skill">ERP Consultant</span>
+                        <span class="about__skill">Digital Marketing Specialist </span>
                         <span class="about__skill">HTML/CSS</span>
                         <span class="about__skill">JavaScript</span>
-                        <span class="about__skill">React</span>
                         <span class="about__skill">UI/UX</span>
-                        <span class="about__skill">Responsive Design</span>
-                        <span class="about__skill">Git</span>
-                    </div>
-                </div>
-                <div class="about__image">
-                    <div class="about__blob">
-                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="var(--first-color)" d="M44.5,-63.2C57.1,-56.9,66.4,-42.7,71.8,-27.3C77.2,-11.9,78.7,4.7,74.1,18.9C69.5,33.1,58.9,44.9,46.2,53.6C33.5,62.3,18.7,67.9,2.8,64.3C-13.2,60.7,-26.3,47.9,-38.9,37.2C-51.5,26.5,-63.5,17.8,-68.9,5.3C-74.3,-7.2,-73.1,-23.5,-64.9,-35.4C-56.7,-47.3,-41.5,-54.8,-26.5,-59.9C-11.5,-65,3.3,-67.7,19.2,-67.2C35.1,-66.7,52.1,-63,64.5,-54.3C76.9,-45.6,84.7,-31.9,44.5,-63.2Z" transform="translate(100 100)" />
-                        </svg>
+
                     </div>
                 </div>
             </div>
@@ -124,22 +127,22 @@
         <!-- SERVICES -->
         <section class="services section" id="services">
             <div class="services__container container">
-                <h2 class="section__title">Services</h2>
+                <h2 class="section__title">Experience</h2>
                 <div class="services__grid grid">
                     <div class="services__item">
                         <i class="ri-computer-line services__icon"></i>
-                        <h3 class="services__title">Web Development</h3>
-                        <p class="services__description">Custom websites and web applications tailored to your needs</p>
+                        <h3 class="services__title">Digital Marketing Specialist</h3>
+                        <p class="services__description">focuses on online marketing strategies (social media, SEO, ads, etc.).</p>
                     </div>
                     <div class="services__item">
                         <i class="ri-smartphone-line services__icon"></i>
-                        <h3 class="services__title">App Development</h3>
-                        <p class="services__description">Mobile applications for both iOS and Android platforms</p>
+                        <h3 class="services__title">Web Development</h3>
+                        <p class="services__description">Creating modern, user-friendly websites that drive engagement and growth.</p>
                     </div>
                     <div class="services__item">
                         <i class="ri-palette-line services__icon"></i>
-                        <h3 class="services__title">UI/UX Design</h3>
-                        <p class="services__description">User-centered design solutions that enhance user experience</p>
+                        <h3 class="services__title">ERP Consulting</h3>
+                        <p class="services__description">Delivering smart, efficient systems for better business management.</p>
                     </div>
                 </div>
             </div>
@@ -152,10 +155,10 @@
                 <p class="contact__description">Have a project in mind? Let's work together!</p>
                 <form class="contact__form" id="contact-form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Your Name" class="contact__input" required>
-                        <input type="email" placeholder="Your Email" class="contact__input" required>
+                        <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
                     </div>
-                    <textarea placeholder="Your Message" class="contact__textarea" required></textarea>
+                    <textarea name="message" placeholder="Your Message" class="contact__textarea" required></textarea>
                     <button type="submit" class="button contact__button">
                         Send Message
                     </button>
@@ -167,17 +170,18 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container container">
-            <p class="footer__copy">&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p class="footer__copy">&copy; 2025 By Pixpen Co. All rights reserved.</p>
             <div class="footer__social">
+                </a>
+                <a href="#" class="https://www.instagram.com/mustafa.sherwann">
+                    <i class="ri-instagram-fill"></i>
+                </a>    <!-- SCROLL UP --
                 <a href="#" class="footer__link">
                     <i class="ri-github-fill"></i>
                 </a>
                 <a href="#" class="footer__link">
                     <i class="ri-linkedin-fill"></i>
-                </a>
-                <a href="#" class="footer__link">
-                    <i class="ri-twitter-fill"></i>
-                </a>
+    SCROLL UP -->
             </div>
         </div>
     </footer>
